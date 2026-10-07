@@ -8,10 +8,13 @@
     "node": ">=22"
   },
   "scripts": {
-    "ingest": "node --env-file-if-exists=.env src/ingest.js"
+    "ingest": "node --env-file-if-exists=.env src/ingest.js",
+    "normalize": "node --env-file-if-exists=.env src/normalize.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
     "apify-client": "^2.25.0",
-    "pg": "^8.23.1"
+    "pg": "^8.23.1",
+    "zod": "^4.6.5"
   }
 }
