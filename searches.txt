@@ -1,0 +1,2 @@
+# One search per line, typed as you would on Mercado Libre. Lines starting with # are ignored.
+iphone 15

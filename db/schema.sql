@@ -7,6 +7,7 @@ CREATE TABLE listings (
     permalink    text NOT NULL,
     seller       text,
     thumbnail    text,
+    listed_condition text,                   -- as Mercado Libre labels it, often missing
     first_seen   timestamptz NOT NULL DEFAULT now(),
     -- Filled by Claude from the title, so like is compared with like.
     model        text,                       -- "iPhone 15 Pro"

@@ -1,0 +1,17 @@
+{
+  "name": "mercado-libre-price-tracker",
+  "version": "1.0.0",
+  "description": "Track Mercado Libre prices for a search with Apify, group listings into comparable models with Claude, and see each model's median price and best deals over time in Postgres.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "ingest": "node --env-file-if-exists=.env src/ingest.js"
+  },
+  "dependencies": {
+    "apify-client": "^2.25.0",
+    "pg": "^8.23.1"
+  }
+}
