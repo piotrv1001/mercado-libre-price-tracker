@@ -9,7 +9,9 @@
   },
   "scripts": {
     "ingest": "node --env-file-if-exists=.env src/ingest.js",
-    "normalize": "node --env-file-if-exists=.env src/normalize.js"
+    "normalize": "node --env-file-if-exists=.env src/normalize.js",
+    "report": "node --env-file-if-exists=.env src/report.js",
+    "start": "npm run ingest && npm run normalize && npm run report"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
